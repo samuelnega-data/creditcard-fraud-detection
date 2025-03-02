@@ -48,6 +48,7 @@ fig = ff.create_distplot(hist_data, group_labels, show_hist=False, show_rug=Fals
 fig.update_layout(title='Credit Card Transactions Vs Time', xaxis=dict(title='Time'))
 fig.show()
 ```
+![Screenshot 2025-03-01 202128](https://github.com/user-attachments/assets/0d7c5f3a-da81-4bee-accb-e6bffa7704c5)
 
 ## Distribution of transaction amounts for fraud vs non-fraud cases
 Created histograms comparing transaction amounts for fraudulent and non-fraudulent transactions.
@@ -67,6 +68,8 @@ plt.ylabel('Number of Transactions')
 plt.yscale('log')
 plt.show()
 ```
+![Screenshot 2025-03-01 202147](https://github.com/user-attachments/assets/c59d908d-cdc5-497a-abb2-ca5ebe983647)
+
 ## Correlation heatmap
 Computed correlations between features and visualizes them using a heatmap with seaborn.
 ```pyt
@@ -76,6 +79,8 @@ corr = df.corr()
 sns.heatmap(corr, cmap='coolwarm', annot=False, linewidths=2)
 plt.show()
 ```
+![Screenshot 2025-03-01 202213](https://github.com/user-attachments/assets/1d2c92cf-41fb-4e7a-adb9-952244d4e86c)
+
 # Train Split Test
 The correlation map showed no strong correlations between the features, meaning no single variable could reliably predict fraud on its own. Given this, a train-test split was a better approach to assess model performance, ensuring the model learns patterns from diverse data rather than relying on a single misleading feature.
 
@@ -113,6 +118,9 @@ X_test_prediction = model.predict(X_test)
 test_data_accuracy = accuracy_score(Y_test, X_test_prediction)
 print('Accuracy on Test Data:', test_data_accuracy)
 ```
+![Screenshot 2025-03-01 202239](https://github.com/user-attachments/assets/f5cc99d8-9b6c-4582-98bf-10cd55fd8a18)
+![Screenshot 2025-03-01 202231](https://github.com/user-attachments/assets/6781ef8d-1132-4087-8986-7ce678511225)
+
 
 
 
