@@ -95,14 +95,14 @@ print("Train Shape:", X_train.shape)
 print("Test Shape:", X_test.shape)
 ```
 
-# Logistic Regression Model & Training the Model
+## Logistic Regression Model & Training the Model
 Created a Logistic Regression model and sets max_iter=1000 to avoid convergence warnings.
 ```pyt
 model = LogisticRegression(max_iter=1000)
 
 model.fit(X_train, Y_train)
 ```
-# Model evaluation
+## Model evaluation
 Used the trained model to predict the class labels for X_train.
 ```pyt
 X_train_prediction = model.predict(X_train)
