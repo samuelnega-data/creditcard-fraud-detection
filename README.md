@@ -1,8 +1,7 @@
 # Credit Card Fraud Detection
 
 ## Overview 
-In this project, I will analyze 28 different variables to determine which are most effective in detecting credit card fraud. The analysis will be conducted using Python in Jupyter Notebook.
-
+In this project, I will analyze 28 different variables to identify which ones are most effective in detecting credit card fraud. Additionally, I will perform a train-test split to assess the model's performance and ensure it is not overfitting, allowing for a more accurate evaluation of its ability to detect fraudulent transactions.
 ## Code 
 ## Importing Libraries
 Imports essential libraries for data manipulation (pandas, numpy), visualization (seaborn, matplotlib, plotly), and machine learning (scikit-learn).
@@ -121,7 +120,11 @@ print('Accuracy on Test Data:', test_data_accuracy)
 ![Screenshot 2025-03-01 202239](https://github.com/user-attachments/assets/f5cc99d8-9b6c-4582-98bf-10cd55fd8a18)
 ![Screenshot 2025-03-01 202231](https://github.com/user-attachments/assets/6781ef8d-1132-4087-8986-7ce678511225)
 
-
-
-
-
+## Takeaway 
+These are some key takeaways from this brief analysis of the credit cards transactions dataset.
+1) Fraudulent transactions occur throughout the day, with a higher concentration during the early hours.
+2) The majority of fraudulent transactions involve small monetary amounts.
+3) No significant correlations were found between variables and fraudulent transactions.
+4) The model achieved high accuracy (99.89% training, 99.90% test), indicating strong generalization and minimal overfitting.
+**Explanation of Split Test Success:**
+The split test was successful as it validated the model's performance and ensured it wasn't overfitting. With nearly identical accuracy on both the training and test datasets, the model demonstrated its robustness in detecting fraudulent transactions across different sets of data.
